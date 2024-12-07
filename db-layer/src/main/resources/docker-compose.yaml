@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: clickhouse-server
+    ports:
+      - "8123:8123"  # HTTP порт для запросов
+      - "9000:9000"  # TCP порт для JDBC
+    network_mode: "host"
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+      - ./schema.sql:/schema.sql:ro
+
+volumes:
+  clickhouse_data:

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="clickHouseLab:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/clickHouseLab_jar</output-path>
+    <root id="archive" name="clickHouseLab.jar">
+      <element id="module-output" name="db-layer" />
+      <element id="module-output" name="GUI-layer" />
+      <element id="module-output" name="app-layer" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/clickhouse/clickhouse-jdbc/0.6.3/clickhouse-jdbc-0.6.3.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: com.clickhouse:clickhouse-jdbc:0.6.3" />
+    </root>
+  </artifact>
+</component>
